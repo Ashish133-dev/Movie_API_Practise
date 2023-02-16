@@ -21,22 +21,29 @@ function App() {
     setMovieList(filteredMovies);
   };
   return (
-    <div className="wrapper bg-dark text-warning pt-5">
-      <Container>
-        <h3 clasName="text-center">My Movie collection</h3>
-        <hr />
+    <>
+      <div className="wrapper bg-dark text-warning pt-5">
+        <Container>
+          <h3 clasName="text-center">My Movie collection</h3>
+          <hr />
 
-        {/* form section */}
-        <SearchForm addMovie={addMovie} />
-        {/* Card Section  */}
-        {/* list section  */}
-        <ListContainer movieList={movieList} removeMovie={removeMovie} />
+          {/* form section */}
+          <SearchForm addMovie={addMovie} />
+          {/* Card Section  */}
+          {/* list section  */}
+          <ListContainer movieList={movieList} removeMovie={removeMovie} />
 
-        {/* Button  */}
+          {/* Button  */}
 
-        {/* movie list  */}
-      </Container>
-    </div>
+          {/* movie list  */}
+
+          {/* Footer */}
+        </Container>
+      </div>
+      <footer className="bg-black text-center p-5 text-light ">
+        copyright
+      </footer>
+    </>
   );
 }
 
